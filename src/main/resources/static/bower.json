@@ -1,0 +1,12 @@
+{
+  "name": "lhama-img",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~1.10.2",
+    "underscore": "~1.5.2",
+    "angular": "angularjs#~1.4.8",
+    "angular-bootstrap": "~0.14.3"
+  },
+  "devDependencies": {}
+}

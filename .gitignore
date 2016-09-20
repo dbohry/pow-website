@@ -1,0 +1,17 @@
+**/node_modules
+**/dist
+**/.tmp
+**/.sass-cache
+**/bower_components
+**/build
+**/.gradle
+**/.idea
+**/gradle
+*.iml
+*.ipr
+*.iws
+.idea/
+.gradletasknamecache
+.gradle/
+build/
+bin/

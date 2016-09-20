@@ -1,0 +1,1 @@
+var powApp = angular.module('powApp', []);

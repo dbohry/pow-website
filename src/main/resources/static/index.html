@@ -1,0 +1,245 @@
+<html ng-app="powApp">
+<head>
+	<title>[PoW] Prisoners of War</title>
+	<meta charset="UTF-8" />
+	<script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="./bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="./bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Plugin JavaScript -->
+	<script src="js/jquery.easing.min.js"></script>
+
+	<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+	<!-- Custom Theme JavaScript -->
+	<script src="js/grayscale.js"></script>
+
+	<script type="text/javascript" src="./app.js"></script>
+	<script type="text/javascript" src="./controller/homeController.js"></script>
+	<script type="text/javascript" src="./js/default.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.min.css" />
+	<link type="text/css" rel="stylesheet" href="./css/grayscale.css" />
+	<link type="text/css" rel="stylesheet" href="./css/style.css" />
+	<link type="text/css" rel="stylesheet" href="./lib/font-awesome/css/font-awesome.min.css" />
+	<link type='text/css' rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,500italic,500' >
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-22829188-6', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    	<!-- Navigation -->
+    	<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    		<div class="container">
+    			<div class="navbar-header">
+    				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+    					<i class="fa fa-bars"></i>
+    				</button>
+    				<a class="navbar-brand page-scroll" href="#page-top">
+    					<img src="./img/logo32.png" />  <span class="light">Prisoners of War</span>
+    				</a>
+    			</div>
+
+    			<!-- Collect the nav links, forms, and other content for toggling -->
+    			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+    				<ul class="nav navbar-nav">
+    					<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+    					<li class="hidden">
+    						<a href="#page-top"></a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#about">Sobre</a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#recrutamento">Recrutamento</a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#vip">VIP</a>
+    					</li>
+    					<li>
+    						<a class="page-scroll" href="#servers">Servidores</a>
+    					</li>
+						<li>
+							<a class="page-scroll" href="#rank">Rank</a>
+						</li>
+    					<li>
+    						<a class="page-scroll" href="#contact">Contato</a>
+    					</li>
+						<li>
+							<a class="page-scroll" href="http://discourse.prisonersofwar.com.br" target="_blank">Forum</a>
+						</li>
+    				</ul>
+    			</div>
+    			<!-- /.navbar-collapse -->
+    		</div>
+    		<!-- /.container -->
+    	</nav>
+
+    	<!-- Intro Header -->
+    	<header class="intro">
+    		<div class="intro-body">
+    			<div class="container">
+    				<div class="row" ng-controller="homeController">
+    					<div class="col-md-8 col-md-offset-2">
+    						<img src="./img/logo128.jpg" />
+    						<br />
+    						<br />
+    						<h3>Seja bem vindo ao nosso site oficial!</h3>
+                            <p>Para alistamento, pedidos de unban ou outras informações visite nosso <a class="page-scroll" href="http://discourse.prisonersofwar.com.br" target="_blank">fórum</a>.</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</header>
+
+    	<!-- About Section -->
+    	<section id="about" class="container content-section text-center">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>Sobre o clã PoW</h2>
+    				<p>Prisoners of War, um clã criado em 2014 formado por varios amigos. <br />É uma equipe tradicional e reunida desde o battlefield 3, criada com um proposito principal: A DIVERSÃO</p>
+    			</div>
+    		</div>
+    	</section>
+
+    	<!-- recrutamento Section -->
+    	<section id="recrutamento" class="container content-section text-center">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>Recrutamento</h2>
+    				<div>
+	    				<p>Gostaria de fazer parte do nosso clã?</p>
+	    				<p><strong>Requerimentos:</strong>
+	    				<br />- Ter 18 anos ou mais
+	    				<br />- Ter <a href="https://www.teamspeak.com/downloads" target="_blank">TeamSpeak 3</a></p>
+    				</div>
+    				
+    				<p>Para mais informações entre lá e converse com um de nossos Admins (ts.prisonersofwar.com.br).</p>
+    			</div>
+    		</div>
+    	</section>
+
+    	<!-- VIP Section -->
+    	<section id="vip" class="container content-section text-center">
+    		<div class="row">
+    			<div class="col-lg-8 col-lg-offset-2">
+    				<h2>VIP</h2>
+    				<div>
+    					<p>Mas o que é ser VIP?</p>
+    					<blockquote>Ser VIP é ter um slot reservado com garantia de entrada no server sem encarar fila!</blockquote>
+    					<p>Quais as vantagens?</p>
+    					<blockquote>Além de não ter que entrar na fila, você não será balanceado durante uma partida</blockquote>
+    					<p>Mas quanto custa isso?</p>
+    					<blockquote>Os preços de um Slot VIP são: R$30/trimestre, R$50/semestre, R$90/ano</blockquote>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+		<section id="servers" class="content-section text-center">
+			<div class="servers-section">
+				<div class="container">
+					<div class="col-lg-8 col-lg-offset-2">
+						<h2>Servidores</h2>
+						<a href="http://battlelog.battlefield.com/bf4/servers/show/pc/d49e4276-0ee7-4b16-85ce-6471b3518d55/PoW-Prisoners-of-War-prisonersofwar-com-br/" class="btn btn-default btn-lg" target="_blank">Battlefield 4 [PoW] Prisoners of War ~ 60Hz</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- rank -->
+        <section id="rank" class="content-section text-center">
+            <div class="servers-section">
+                <div class="container">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h2>Rank (Top 10)</h2>
+                        <div ng-controller="homeController">
+                            <div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>Player</th>
+                                            <th>Score</th>
+                                            <th>Kills</th>
+                                            <th>K/D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr ng-repeat="(index, player) in rank">
+                                        <td ng-bind="index +1"></td>
+                                        <td ng-bind="player.name"></td>
+                                        <td ng-bind="player.score"></td>
+                                        <td ng-bind="player.kills"></td>
+                                        <td ng-bind="player.kdr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p>Para acessar o rank completo <a href="http://rank.prisonersofwar.com.br/index.php?p=leaders&sid=1" target="_blank">clique aqui</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+		<!-- Contact Section -->
+		<section id="contact" class="container content-section text-center">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h2>Contato</h2>
+					<p>Alguma dúvida sobre o clã? Entre já em contato!</p>
+					<p>
+						<a href="https://www.facebook.com/groups/prisoners.of.war.br/" target="_blank"><img src="./img/fb_logo.png" /></a>
+						<a href="#contact" title="ts.prisonersofwar.com.br"><img src="./img/ts_logo.png" /></a>
+					</p>
+					<!--<ul class="list-inline banner-social-buttons">
+						<li>
+							<a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+						</li>
+						<li>
+							<a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+		</section>
+
+		<!-- Map Section -->
+		<div id="map"></div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container text-center">
+				<p>Copyright &copy; Prisoners of War 2016</p>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
